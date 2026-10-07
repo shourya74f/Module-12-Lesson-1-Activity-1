@@ -1,0 +1,23 @@
+file=open("bucket_list.txt","w")
+file.write("1. Skydiving\n")
+file.write("2. Visit Switzerland\n")
+file.write("3. Meet CR7\n")
+file.close()
+print("Bucket list has been created and saved to 'bucket_list.txt'.")
+
+file=open("bucket_list.txt","r")
+c=file.read()
+print("Here is your bucket list:")
+print(c)
+file.close()
+
+file=open("bucket_list.txt","a")
+file.write("4. Code a video game\n")
+file.close()
+print("\n2 more items have been added to the bucket list.")
+
+file=open("bucket_list.txt","r")
+print("Here is your updated bucket list:")
+c=file.read()
+print(c)
+file.close()
